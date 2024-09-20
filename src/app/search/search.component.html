@@ -1,0 +1,18 @@
+<input type="text" [formControl]="query" placeholder="Search messages and users">
+<button (click)="search()">Search</button>
+@if(results) {
+  <h3>Messages</h3>
+  <ul>
+    @for(message of results.messages;track message.id ;let idx = $index){
+      <li>{{ message.content }}</li>
+    }
+  </ul>
+  <h3>Users</h3>
+  <ul>
+    @for(user of results.users;track user.id;let idx = $index){
+      <li>{{ user.name }}</li>
+    }
+  </ul>
+}
+<app-chat></app-chat>
+

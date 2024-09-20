@@ -37,6 +37,10 @@ yarn-error.log
 testem.log
 /typings
 
+# Websockets
+/websocket-server/node_modules
+/websocket-server/package-lock.json
+
 # System files
 .DS_Store
 Thumbs.db

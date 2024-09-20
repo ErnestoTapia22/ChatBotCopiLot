@@ -1,0 +1,45 @@
+/* src/app/chat/chat.component.css */
+
+.chat-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.user-list {
+  flex: 1;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.chat-content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-window {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.message-input {
+  border-top: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+  .chat-container {
+    flex-direction: column;
+  }
+
+  .user-list {
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .chat-content {
+    flex: 1;
+  }
+}
